@@ -21,4 +21,9 @@ describe('add function', () => {
         expect(add("1\n2,3")).toBe(6);
     });
 
+    //test 5
+    it('should support custom delimiters', () => {
+        expect(add("//;\n1;2")).toBe(3);
+    });
+
 });
