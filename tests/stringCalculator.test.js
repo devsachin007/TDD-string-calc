@@ -26,4 +26,9 @@ describe('add function', () => {
         expect(add("//;\n1;2")).toBe(3);
     });
 
+    //test 6
+    it('should throw an error for negative numbers', () => {
+        expect(() => add("1,-2,3")).toThrow("negatives not allowed: -2");
+    });
+
 });
