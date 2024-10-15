@@ -31,4 +31,9 @@ describe('add function', () => {
         expect(() => add("1,-2,3")).toThrow("negatives not allowed: -2");
     });
 
+    //test 7
+    it('should ignore numbers bigger than 1000', () => {
+        expect(add("2,1001")).toBe(2);
+    });
+
 });
